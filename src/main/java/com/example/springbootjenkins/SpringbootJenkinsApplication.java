@@ -19,6 +19,6 @@ public class SpringbootJenkinsApplication {
 
     @GetMapping("/test")
     public String test() {
-        return envVar1;
+        return envVar1+1;
     }
 }
