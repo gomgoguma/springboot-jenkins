@@ -1,2 +1,8 @@
 server:
   port: 8100
+
+
+my:
+  env:
+    var1: ${ENV_VAR1}
+    var2: ${ENV_VAR2}

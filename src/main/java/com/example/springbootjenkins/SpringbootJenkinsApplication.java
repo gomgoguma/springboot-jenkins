@@ -1,5 +1,6 @@
 package com.example.springbootjenkins;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,8 +14,14 @@ public class SpringbootJenkinsApplication {
         SpringApplication.run(SpringbootJenkinsApplication.class, args);
     }
 
+    @Value("${my.env.var1}")
+    private String envVar1;
+
+    @Value("${my.env.var2}")
+    private String envVar2;
+
     @GetMapping("/test")
     public String test() {
-        return "hello, world32";
+        return envVar1+envVar2;
     }
 }
