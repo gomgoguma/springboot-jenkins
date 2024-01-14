@@ -1,5 +1,8 @@
 FROM openjdk:17
 
+ARG MY_ENV1
+ARG MY_ENV2
+
 ENV MY_ENV1=${MY_ENV1} \
     MY_ENV2=${MY_ENV2}
 
