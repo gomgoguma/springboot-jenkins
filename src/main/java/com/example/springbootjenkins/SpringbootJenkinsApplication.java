@@ -15,6 +15,6 @@ public class SpringbootJenkinsApplication {
 
     @GetMapping("/test")
     public String test() {
-        return "hello, world8";
+        return "hello, world9";
     }
 }
