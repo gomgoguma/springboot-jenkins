@@ -5,4 +5,3 @@ server:
 my:
   env:
     var1: ${MY_ENV1}
-    var2: ${MY_ENV2}

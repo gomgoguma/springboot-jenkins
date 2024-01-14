@@ -17,11 +17,8 @@ public class SpringbootJenkinsApplication {
     @Value("${my.env.var1}")
     private String envVar1;
 
-    @Value("${my.env.var2}")
-    private String envVar2;
-
     @GetMapping("/test")
     public String test() {
-        return envVar1+envVar2;
+        return envVar1;
     }
 }
